@@ -1,5 +1,5 @@
-<mat-card *ngIf='deviceInfo.kind.includes("o")' >
+<mat-card margin="15px" *ngIf='deviceInfo.kind.includes("o")' >
   <mat-card-title >{{deviceInfo.label}} - {{deviceInfo.kind}}</mat-card-title>
-  <video #videoel id="videoStrm" autoplay></video>
-  Content updated {{getDateTime() | date: 'medium'}}
+  <video class="img-fluid" width="100%" #videoel id="videoStrm" playsinline autoplay></video>
+  <!--Content updated {{getDateTime() | date: 'medium'}}-->
 </mat-card>

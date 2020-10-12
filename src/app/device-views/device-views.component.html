@@ -1,7 +1,7 @@
 <span>Device Views</span>
-<mat-tab-group animationDuration="0ms" (selectedTabChange)="onSelectChange($event)">
-  <mat-tab *ngFor="let device of devices" [label]="device.kind">
-    <app-device-view [deviceInfo]="device"></app-device-view>
+<mat-tab-group animationDuration="500ms" (selectedTabChange)="onSelectChange($event)">
+  <mat-tab *ngFor="let device of devices" [label]="device.label">
+    <app-device-view #devicecomponent [deviceInfo]="device"></app-device-view>
   </mat-tab>
 </mat-tab-group>
 

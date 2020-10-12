@@ -5,11 +5,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-import {MatCardModule, MatInputModule, MatButtonModule, MatToolbarModule, MatIconModule} from '@angular/material';
+import {MatCardModule, MatInputModule, MatButtonModule, MatToolbarModule, MatIconModule, MatTabsModule} from '@angular/material';
+import { HeaderComponent } from './header/header.component';
+import { DeviceViewsComponent } from './device-views/device-views.component';
+import { DeviceViewComponent } from './device-view/device-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    DeviceViewsComponent,
+    DeviceViewComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +24,8 @@ import {MatCardModule, MatInputModule, MatButtonModule, MatToolbarModule, MatIco
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
 
   ],
   providers: [],

@@ -16,6 +16,7 @@ export class DeviceViewsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true})
     navigator.mediaDevices.enumerateDevices()
       .then((deviceInfos: MediaDeviceInfo[]) => {
         this.devices = deviceInfos;

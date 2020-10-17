@@ -1,5 +1,9 @@
 # AngularWebRtc
 
+Test web page for connecting to the available video devices and showing them on sperate tabs.
+
+Hosted using Firebase, [camerawebrtc.web.app](https://camerawebrtc.web.app)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
 
 ## Development server
